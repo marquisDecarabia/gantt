@@ -267,7 +267,9 @@ export default class Gantt {
 
     bind_events() {
         this.bind_grid_click();
-        this.bind_bar_events();
+        if (!this.options.readonly) {
+            this.bind_bar_events();
+        }
     }
 
     render() {
