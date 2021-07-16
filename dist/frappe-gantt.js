@@ -1022,11 +1022,11 @@ class Popup {
         }
 
         // show
-        this.parent.style.display = 'block';
+        this.parent.style.opacity = 1;
     }
 
     hide() {
-        this.parent.style.display = 'none';
+        this.parent.style.opacity = 0;
     }
 }
 
