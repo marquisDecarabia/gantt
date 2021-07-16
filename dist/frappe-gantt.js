@@ -1108,9 +1108,10 @@ class Gantt {
             padding: 18,
             view_mode: 'Day',
             date_format: 'YYYY-MM-DD',
-            popup_trigger: 'click',
+            popup_trigger: 'dblclick',
             custom_popup_html: null,
-            language: 'en'
+            language: 'en',
+            readonly: false
         };
         this.options = Object.assign({}, default_options, options);
     }
